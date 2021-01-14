@@ -1,6 +1,6 @@
 package chain;
 import java.util.Date;
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class Block {
@@ -28,7 +28,7 @@ public class Block {
         return calculatedHash;
     }
 
-    public static void addBlock(ArrayList<Block> blockchain, Block newBlock, int difficulty){
+    public static void addBlock(List<Block> blockchain, Block newBlock, int difficulty){
         newBlock.mineBlock(difficulty);
         blockchain.add(newBlock);
     }
